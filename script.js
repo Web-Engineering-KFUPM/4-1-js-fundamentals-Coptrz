@@ -160,6 +160,11 @@ console.log("cube(3) =", cube(3));
 // Declare var a = 1; let b = 2 inside a block { },  then try displaying both outside the block; observe differences.
 // write code here
 
+{
+  var a = 1;
+  let b = 2;
+}
+console.log("a =", a);
 
 // ==================
 // TODO-8: ARRAYS (CORE)
@@ -168,6 +173,13 @@ console.log("cube(3) =", cube(3));
 // Task 8.1 — create & mutate
 // TODO: let nums = [3,1,4]; then push(1), unshift(9), pop(); log final array and length.
 // write code here
+
+let nums = [3, 1, 4];
+nums.push(1);
+nums.unshift(9);
+nums.pop();
+console.log("Final array:", nums);
+console.log("Array length:", nums.length);
 
 
 // End of manual — great job! Keep this file open and work task by task.
