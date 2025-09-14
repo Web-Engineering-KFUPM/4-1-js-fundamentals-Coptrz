@@ -29,12 +29,20 @@ const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identi
 // Task 3.1 — arithmetic basics
 // Given let x = 8, y = 3; log x+y, x-y, x*y, x/y, x%y.
 // write code here
-
+let x = 8, y = 3;
+console.log(x + y)
+console.log(x - y)
+console.log(x * y)
+console.log(x / y)
+console.log(x % y)
 
 // Task 3.2 — number vs string
 // Display results of "2" + 3, 2 + "3", and 2 + 3. Add a short comment: why do the first two concatenate?
 // write code here
-
+console.log("2" + 3)
+console.log(2 + "3")
+console.log(2 + 3)
+//the first two concatenate because JavaScript converts the numbers into strings ,becsause the other is a string
 
 // Read chapter 4 in zyBooks: Compound Assignment Operators
 
@@ -52,6 +60,16 @@ const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identi
 //         - "Aged" if age > 35
 // write code here
 
+let age = prompt("Enter your age:");
+age = Number(age);
+if (age < 13) {
+  console.log("Child");
+} else if (age >= 13 && age <= 35) {
+  console.log("Young");
+} else {
+  console.log("Aged");
+}
+
 
 // Task 4.2 — Switch statement
 // Create a variable let day = "Mon".
@@ -60,6 +78,25 @@ const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identi
 //         - If it is "Sat" or "Sun", log "weekend".
 //         - For any other value, log "unknown".
 // write code here
+
+let day = "Mon";
+switch (day) {
+  case "Mon":
+  case "Tue":
+  case "Wed":
+  case "Thu":
+  case "Fri":
+    console.log("weekday");
+    break;
+  case "Sat":
+  case "Sun":
+    console.log("weekend");
+    break;
+  default:
+    console.log("unknown");
+    break;
+}
+
 
 // Read Chapter 4 in zyBooks: Conditional (ternary) operator
 
@@ -71,15 +108,29 @@ const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identi
 // TODO: Sum integers 1..10 with a for loop; display the result of total sum.
 // write code here
 
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+console.log("Sum from 1 to 10:", sum);
 
 // Task 5.2 — while loop
 // let t = 3; while(t > 0), decrement the value t variable in each iteration and display the result.
 // write code here
 
+let t = 3;
+while (t > 0) {
+  console.log("t =", t);
+  t--;
+}
 
 // Read Chapter 4 in zyBooks: Do-While Loop
 // write code here
 
+// do-while loop
+//do {
+  // code
+//} while (condition);
 
 // =============================
 // TODO-6: FUNCTIONS (DECL, RETURN, ARROW)
@@ -89,12 +140,18 @@ const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identi
 // Make a function add(a,b){ return a+b; } display the result of add(2,5).
 // write code here
 
+function add(a, b) {
+  return a + b;
+}
+console.log("add(2, 5) =", add(2, 5));
+
 
 // Task 6.2 — Arrow functions
 // Make an arrow function; const cube = n => n*n*n; cube(3)
 // write code here
 
-
+const cube = n => n * n * n;
+console.log("cube(3) =", cube(3));
 // =================================
 // TODO-7: SCOPE & GLOBAL OBJECT (ESSENTIALS)
 // =================================
