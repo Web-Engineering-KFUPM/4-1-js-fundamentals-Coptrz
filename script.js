@@ -8,6 +8,10 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 // Create let course = "CIS101"; display it usinng console.log(course), reassign to "CIS102"; display it again.
 // write code here
 
+let course = "CIS101";
+console.log(course);
+course = "CIS102";
+console.log(course);
 
 // Task 2.2 — const safety
 // Create const SCHOOL = "MyCollege"; then TRY to reassign it and observe the Console error. Add a comment explaining    why  reassignment fails.
@@ -15,6 +19,8 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 // const SCHOOL = "MyCollege";
 // SCHOOL = "OtherCollege"; // <-- Uncomment to see the error, then re-comment after testing
 
+const SCHOOL = "MyCollege"; // the console error is Uncaught SyntaxError: Identifier 'SCHOOL' has already been declared , it failed  because it was already assigned
+//SCHOOL = "OtherCollege";
 
 // ==========================
 // TODO-3: ARITHMETIC & TYPES
